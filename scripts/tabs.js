@@ -12,7 +12,6 @@ const tabsFunc = () => {
       memory: '128',
       price: '60000',
       image: 'img/iPhone-graphite.webp',
-      title: ' 128GB Graphite',
     },
 
     {
@@ -20,7 +19,6 @@ const tabsFunc = () => {
       memory: '256',
       price: '65000',
       image: 'img/iPhone-silver.webp',
-      title: ' 256GB Silver',
     },
 
     {
@@ -28,7 +26,6 @@ const tabsFunc = () => {
       memory: '512',
       price: '70000',
       image: 'img/iPhone-sierra_blue.webp',
-      title: ' 512GB Sierra Blue',
     },
   ];
   //ф. изменения содержание заголовка и цены таба
@@ -42,7 +39,7 @@ const tabsFunc = () => {
     //tabsImage.src = `${tabsOptions[index].image}`;// чем этот вариант хуже ?
 
     // изменение title в зависимости от выбранного телефона
-    document.title = `iPhone 13 Pro ${tabsOptions[index].title}`;
+    document.title = `iPhone 13 Pro ${tabsOptions[index].memory}GB ${tabsOptions[index].name}`;
   };
 
   //ф. выбора активного таба
