@@ -42,7 +42,8 @@ const tabsFunc = () => {
     tabsImage.setAttribute('src', tabsOptions[index].image); // изменение картинки
     //tabsImage.src = `${tabsOptions[index].image}`;// чем этот вариант хуже ?
 
-    title.textContent = `iPhone 13 Pro ${tabsOptions[index].title}`;
+    //title.textContent = `iPhone 13 Pro ${tabsOptions[index].title}`;
+    document.title = `iPhone 13 Pro ${tabsOptions[index].title}`;
   };
 
   //ф. выбора активного таба
