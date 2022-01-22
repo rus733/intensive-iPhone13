@@ -5,7 +5,6 @@ const tabsFunc = () => {
   const tabsTitle = document.querySelector('.card-details__title');
   const tabsPrice = document.querySelector('.card-details__price');
   const tabsImage = document.querySelector('.card__image_item');
-  const title = document.querySelector('title');
 
   const tabsOptions = [
     {
@@ -42,7 +41,7 @@ const tabsFunc = () => {
     tabsImage.setAttribute('src', tabsOptions[index].image); // изменение картинки
     //tabsImage.src = `${tabsOptions[index].image}`;// чем этот вариант хуже ?
 
-    //title.textContent = `iPhone 13 Pro ${tabsOptions[index].title}`;
+    // изменение title в зависимости от выбранного телефона
     document.title = `iPhone 13 Pro ${tabsOptions[index].title}`;
   };
 
