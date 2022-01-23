@@ -1,12 +1,13 @@
 const accordeon = () => {
   const chItems = document.querySelectorAll('.characteristics__item');
   // открыты й первый  блок
+  /*
   const chItem = document.querySelector('.characteristics__item');
 
   chItem.querySelector('.characteristics__title').classList.add('active');
   chItem.querySelector('.characteristics__description').classList.add('open');
   chItem.querySelector('.characteristics__description').style.height = chItem.querySelector('.characteristics__description').scrollHeight + 'px';
-
+*/
   //
   chItems.forEach((item) => {
     const chButton = item.querySelector('.characteristics__title');
