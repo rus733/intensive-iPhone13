@@ -43,6 +43,7 @@ const tabsFunc = () => {
   };
 
   //ф. выбора активного таба
+  /*
   const changeActiveTabs = (indexClickedTab) => {
     tabs.forEach((tab, index) => {
       tab.classList.remove('active');
@@ -50,6 +51,7 @@ const tabsFunc = () => {
         tab.classList.add('active');
       }
     });
+    */
     /*
 //вар Кир 1 
 const changeActiveTabs = (indexClickedTab) => {
@@ -58,13 +60,13 @@ const changeActiveTabs = (indexClickedTab) => {
     });
     */
 
-    /*
-    вар кир 2 
+    
+    //вар кир 2 
 const changeActiveTabs = (indexClickedTab) =>
     tabs.forEach((tab, index) =>
       (index === indexClickedTab ? tab.classList.remove('active') : tabs[indexClickedTab].classList.add('active')));
 
-    */
+    
 
     changeContent(indexClickedTab);
   };
