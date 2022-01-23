@@ -1,7 +1,6 @@
 const accordeon = () => {
   const chItems = document.querySelectorAll('.characteristics__item');
   // открыты й первый  блок
-
   const chItem = document.querySelector('.characteristics__item');
 
   chItem.querySelector('.characteristics__title').classList.add('active');
