@@ -27,6 +27,3 @@ const accordeon = () => {
   });
 };
 accordeon();
-//${item.photo} //${item.id} // ${item.name} //${item.price}
-//const btn = document.querySelector('.cross-sell__add');
-//console.log(btn);
