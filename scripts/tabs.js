@@ -32,9 +32,7 @@ const tabsFunc = () => {
   const changeContent = (index) => {
     //изменение текста емкость памяти  и название смартфона
     tabsTitle.textContent = `Смартфон Apple iPhone 13 Pro ${tabsOptions[index].memory}GB ${tabsOptions[index].name}`;
-
     tabsPrice.textContent = `${tabsOptions[index].price}₽`; //изменение цены
-
     tabsImage.setAttribute('src', tabsOptions[index].image); // изменение картинки
     //tabsImage.src = `${tabsOptions[index].image}`;// чем этот вариант хуже ?
 
@@ -46,12 +44,10 @@ const tabsFunc = () => {
   const changeActiveTabs = (indexClickedTab) => {
     tabs.forEach((tab, index) => {
       tab.classList.remove('active');
-
       if (index === indexClickedTab) {
         tab.classList.add('active');
       }
     });
-
     changeContent(indexClickedTab);
   };
   /*
