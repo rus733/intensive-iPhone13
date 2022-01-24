@@ -37,16 +37,12 @@ const sendForm = () => {
         'Content-type': 'application/json; charset=UTF-8',
       },
     }).then(() => {
-      //console.log('отправлено');
-      labels.forEach((label) => {
-        const input = label.querySelector('input');
-        input.value = '';
-      });
-
-      setTimeout(() => {
-        modal.style.display = 'none';
-      }, 1000);
+      console.log('отправлено');
     });
+    setTimeout(() => {
+      e.target.reset(); //очищаем форму
+      modal.style.display = 'none';
+    }, 3000);
   });
 };
 sendForm();
