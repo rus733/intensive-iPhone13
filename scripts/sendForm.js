@@ -42,7 +42,10 @@ const sendForm = () => {
         const input = label.querySelector('input');
         input.value = '';
       });
-      modal.style.display = 'none';
+
+      setTimeout(() => {
+        modal.style.display = 'none';
+      }, 1000);
     });
   });
 };
